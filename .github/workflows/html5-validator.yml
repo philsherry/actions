@@ -11,7 +11,7 @@ on:
       - .github/workflows/html5-validator.yml
 
 jobs:
-  validate-things:
+  html5-validator:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

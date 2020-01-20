@@ -7,7 +7,7 @@ name: Validate for audit
 
 on:
   release:
-    types: [created, edited, published]
+    types: [created, edited]
   # ^ More than one activity type triggers this event.
   # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#release-event-release
 
