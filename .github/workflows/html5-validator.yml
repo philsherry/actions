@@ -1,0 +1,21 @@
+name: html5-validator
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+    paths:
+      - "**.html"
+      - "**.njk"
+      - .github/workflows/html5-validator.yml
+
+jobs:
+  validate-things:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: html5-validator
+        uses: Cyb3r-Jak3/html5validator-action@master
+        with:
+          root: app/views/

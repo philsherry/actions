@@ -1,0 +1,28 @@
+## https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow
+## https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
+
+# We want to trigger HTML validation when a branch is tagged for release.
+
+name: Validate for audit
+
+on:
+  release:
+    types: [created, edited, published]
+  # ^ More than one activity type triggers this event.
+  # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/events-that-trigger-workflows#release-event-release
+
+  push:
+    branches:
+      - "releases/**"
+
+jobs:
+  build:
+    name: HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Validate the HTML files
+      - name: html5-validator
+        uses: Cyb3r-Jak3/html5validator-action@master
+        with:
+          root: app/views/

@@ -1,0 +1,23 @@
+@import '_colours';
+
+.area {
+  background: $fuschia;
+  border: dashed $white 1px;
+  box-sizing: border-box;
+  clear: both;
+  color: $white;
+  font-family: 'nta', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em;
+}
+
+/* area styles specific to certain ones */
+main.area {
+  min-height: 16em;
+}
+
+.header-proposition {
+  clear: none;
+  min-height: 6em;
+}

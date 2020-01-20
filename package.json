@@ -1,0 +1,30 @@
+{
+  "author": "Phil Sherry <philsherry@mac.com> (https://philsherry.com)",
+  "bugs": {
+    "url": "https://github.com/philsherry/actions/issues"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.1",
+    "@actions/exec": "^1.0.3",
+    "@actions/github": "^2.0.1",
+    "@actions/glob": "^0.1.0",
+    "@actions/io": "^1.0.2",
+    "@actions/tool-cache": "^1.3.0",
+    "eslint": "^6.8.0"
+  },
+  "description": "Testing a bunch of Actions that do code validation and show a badge in the README file.",
+  "devDependencies": {},
+  "homepage": "https://github.com/philsherry/actions#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "actions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philsherry/actions.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1"
+}

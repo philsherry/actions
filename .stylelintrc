@@ -1,0 +1,104 @@
+{
+  "config": {
+    "syntax": "scss"
+  },
+  "defaultSeverity": "warning",
+  "rules": {
+    "block-closing-brace-newline-before": "always-multi-line",
+    "block-no-empty": true,
+    "block-opening-brace-newline-after": "always-multi-line",
+    "color-named": "never",
+    "color-no-hex": true,
+    "color-no-invalid-hex": true,
+    "comment-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "stylelint-commands",
+          "after-comment"
+        ]
+      }
+    ],
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": [
+          "consecutive-duplicates",
+          "consecutive-duplicates-with-different-values"
+        ]
+      }
+    ],
+    "declaration-block-no-shorthand-property-overrides": true,
+    "declaration-block-semicolon-newline-after": "always-multi-line",
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "function-calc-no-unspaced-operator": true,
+    "function-url-quotes": [
+      "always",
+      {
+        "except": "empty"
+      }
+    ],
+    "function-whitespace-after": "always",
+    "indentation": 2,
+    "length-zero-no-unit": true,
+    "max-empty-lines": 2,
+    "max-nesting-depth": 2,
+    "no-descending-specificity": true,
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true,
+    "number-no-trailing-zeros": true,
+    "property-case": "lower",
+    "property-no-vendor-prefix": true,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ],
+    "selector-attribute-quotes": "always",
+    "selector-combinator-space-after": "always",
+    "selector-combinator-space-before": "always",
+    "selector-max-specificity": "0,4,0",
+    "selector-max-universal": 0,
+    "selector-pseudo-element-colon-notation": "double",
+    "selector-type-case": "lower",
+    "string-no-newline": true,
+    "string-quotes": "single",
+    "unit-case": "lower",
+    "unit-whitelist": [
+      "%",
+      "ch",
+      "deg",
+      "em",
+      "fr",
+      "ms",
+      "px",
+      "rem",
+      "s",
+      "vh",
+      "vmax",
+      "vmin",
+      "vw"
+    ],
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": [
+          "translateX",
+          "translateY"
+        ]
+      }
+    ],
+    "value-no-vendor-prefix": true
+  }
+}
