@@ -4,7 +4,7 @@
     "url": "https://github.com/philsherry/actions/issues"
   },
   "dependencies": {
-    "@actions/core": "^1.2.1",
+    "@actions/core": "^1.2.6",
     "@actions/exec": "^1.0.3",
     "@actions/github": "^2.0.1",
     "@actions/glob": "^0.1.0",
