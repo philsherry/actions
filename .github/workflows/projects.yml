@@ -5,12 +5,13 @@ on:
     types: [moved]
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: philsherry/actions-projects@master
-      with:
-        repo-token: "${{ secrets.ACTIONS_PROJECTS }}"
-        kanban-type: "3"
-        kanban-id: "8089474"
-        project-board: "actions/projects/1"
-        tasks-board: "actions-tasks/projects/1"
+  projects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: philsherry/actions-projects@master
+        with:
+          repo-token: "${{ secrets.ACTIONS_PROJECTS }}"
+          kanban-type: "3"
+          kanban-id: "8089474"
+          project-board: "actions/projects/1"
+          tasks-board: "actions-tasks/projects/1"
