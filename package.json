@@ -10,7 +10,10 @@
     "@actions/glob": "^0.1.1",
     "@actions/io": "^1.1.0",
     "@actions/tool-cache": "^1.6.1",
-    "eslint": "^7.26.0"
+    "eslint": "^7.26.0",
+    "htmlhint": "^0.14.2",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^13.13.1"
   },
   "description": "Testing a bunch of Actions that do code validation and show a badge in the README file.",
   "devDependencies": {},
@@ -24,7 +27,10 @@
     "url": "git+https://github.com/philsherry/actions.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:html": "htmlhint 'app/**/*.html' 'tests/*.html'",
+    "lint:js": "eslint --config .eslintrc.json 'src/js/*.js' 'tests/*.js'",
+    "lint:scss": "stylelint 'src/scss/*.scss' 'tests/*.scss'",
+    "test": "npm-run-all --serial lint:html lint:scss lint:js"
   },
   "version": "0.0.1"
 }

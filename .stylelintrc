@@ -75,7 +75,7 @@
     "string-no-newline": true,
     "string-quotes": "single",
     "unit-case": "lower",
-    "unit-whitelist": [
+    "unit-allowed-list": [
       "%",
       "ch",
       "deg",
