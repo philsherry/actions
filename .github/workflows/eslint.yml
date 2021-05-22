@@ -10,4 +10,4 @@ jobs:
       - name: Install modules
         run: npm install
       - name: Run ESLint
-        run: eslint --config .eslintrc.json 'src/js/*.js' 'tests/*.js'
+        run: npm run lint:js
