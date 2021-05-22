@@ -9,5 +9,3 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run ESLint
         run: eslint . --ext .js,.jsx,.ts,.tsx
-        with:
-          files: src/js
