@@ -28,7 +28,7 @@
   },
   "scripts": {
     "lint:html": "htmlhint 'app/**/*.html' 'tests/*.html'",
-    "lint:js": "eslint --config .eslintrc.json 'src/js/*.js' 'tests/*.js'",
+    "lint:js": "eslint --fix --config .eslintrc.json 'src/js/*.js' 'tests/*.js'",
     "lint:scss": "stylelint 'src/scss/*.scss' 'tests/*.scss'",
     "test": "npm-run-all --serial lint:html lint:scss lint:js"
   },
