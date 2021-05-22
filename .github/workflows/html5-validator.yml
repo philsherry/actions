@@ -15,7 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/upload-artifact@v2
+        with:
+          name: log
+          path: log.log
       - name: html5-validator
-        uses: Cyb3r-Jak3/html5validator-action@master
+        uses: Cyb3r-Jak3/html5validator-action@v0.6
         with:
           root: app/views/
+          log_file: test_config
+          log: DEBUG

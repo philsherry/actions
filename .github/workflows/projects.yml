@@ -8,7 +8,7 @@ jobs:
   projects:
     runs-on: ubuntu-latest
     steps:
-      - uses: philsherry/actions-projects@master
+      - uses: philsherry/actions-projects@main
         with:
           repo-token: "${{ secrets.ACTIONS_PROJECTS }}"
           kanban-type: "3"
