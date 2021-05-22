@@ -16,7 +16,9 @@
     "stylelint": "^13.13.1"
   },
   "description": "Testing a bunch of Actions that do code validation and show a badge in the README file.",
-  "devDependencies": {},
+  "devDependencies": {
+    "postcss": ">=8.2.10"
+  },
   "homepage": "https://github.com/philsherry/actions#readme",
   "keywords": [],
   "license": "MIT",
